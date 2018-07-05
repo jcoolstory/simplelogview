@@ -6,8 +6,7 @@ app.use(express.urlencoded());
 let logCollection = [];
 
 app.all('/*', function(req, res, next) {
-    console.log(req.headers)
-    console.log("all");
+
     res.header("Access-Control-Allow-Origin","*");
     res.header('Access-Control-Allow-Methods','PUT, GET, POST, DELETE, OPTIONS');
     res.header("Access-Control-Allow-Headers","Origin, Accept, Content-Type, X-Requested-With, X-CSRF-Token");
